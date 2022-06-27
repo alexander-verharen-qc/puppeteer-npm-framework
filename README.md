@@ -5,6 +5,8 @@ Installs puppeteer, dot-env, npm-run-all (devtools)
 
 Provides sample test in generic-tests folder
 
+To-do: look at extras from https://github.com/berstend/puppeteer-extra for captchas and other extras.
+
 ## Features
 1. Executes a collection of recorded tests
     
