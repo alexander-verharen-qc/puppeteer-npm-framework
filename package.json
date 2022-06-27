@@ -11,7 +11,7 @@
     "test": "node ./generic-tests/00_The_HomeDepot.js",
     "smoke-tests": "node ./smoke-tests.js",
     "clean": "npm-run-all -s clean:archive clean:delete",
-    "clean:archive": "zip -r ./test-results/* `date +%Y-%m-%d`-test-results.zip",
+    "clean:archive": "zip -r `date +%Y-%m-%d`-test-results.zip ./test-results/*",
     "clean:delete": "rm -rf ./*.jpg && rm -rf ./test-results/* && rm -rf ./*.log",
     "clean:complete": "npm run clean && rmdir /Q /S node_modules",
     "clean:install": "npm run clean:complete && npm i && npm install && mkdir test-results"
