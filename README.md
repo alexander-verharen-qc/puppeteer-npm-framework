@@ -3,7 +3,23 @@ A framework for automating replay of Chrome recorded tests
 
 Installs puppeteer, dot-env, npm-run-all (devtools)
 
-Provides a sample test in generic-tests folder
+Provides sample test in generic-tests folder
+
+Features:
+1. Executes a collection of recorded tests
+    a. Outputs test duration to console
+    c. Takes inputs for username/password in .env file
+2. Provides code samples for modification of your recorded tests
+    a. Test behavior in variables (headless/slowMo, etc.)
+    b. Take screenshots
+    c. Calculate test timing
+    d. 
+3. Cleanup feature
+    a. npm run cleanup // archive test-results into zip and cleans up results and log files (using npm-run-all -sequential)
+    b. npm run cleanup:complete // cleanup plus remove npm modules, all log files
+    c. npm run cleanup:install // cleanup:complete, cleanup and reinitialize npm
+ 
+- 
 
 ## Usage:
 Install and verify by running the commands below and take note of console output and test-results folder (screenshot provided)
