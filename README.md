@@ -108,7 +108,7 @@ Replace "YOURPASSWORD" with password
 After loading a major page, add a screenshot and a log messages (update example as needed)
 ```javascript
     console.log(`\n\n Taking Screenshot of Login Page ' + ${testname}`);
-    await page.screenshot({ path: `${dir}/${testname}-login-image001.png`, type: 'png' });
+    await page.screenshot({ path: `${dir}/${testname}-login-image001.jpg`, type: 'jpeg' });
 ```
 
 
