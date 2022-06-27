@@ -5,7 +5,7 @@ Installs puppeteer, dot-env, npm-run-all (devtools)
 
 Provides sample test in generic-tests folder
 
-Features:
+## Features
 1. Executes a collection of recorded tests
     
     Outputs test duration to console
@@ -27,7 +27,8 @@ Features:
     npm run cleanup:complete // cleanup plus remove npm modules, all log files
     
     npm run cleanup:install // cleanup:complete, cleanup and reinitialize npm
- 
+
+
 - 
 
 ## Usage:
