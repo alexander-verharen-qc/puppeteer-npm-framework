@@ -1,12 +1,12 @@
-# Puppeteer Tests
-A package with smoke tests for Quotecenter applications
+# Puppeteer NPM Framework
+A framework for automating replay of Chrome recorded tests
 
-Installs puppeteer, puppeteer-report, concurrently and dependencies
+Installs puppeteer, dot-env, npm-run-all (devtools)
 
-Installs smoke-non-intrusive tests for quotecenter
+Provides a sample test in generic-tests folder
 
 ## Usage:
-Install and verify
+Install and verify by running the commands below and take note of console output and test-results folder (screenshot provided)
 
 ```bash
 git clone https://github.com/alexander-verharen-qc/puppeteer-npm-framework
@@ -17,7 +17,7 @@ npm run test #runs a simple web page test
 
 Update config/dev-env to setup your username/password for quotecenter applications
 
-## To run Smoke Tests:
+## To run your recorded and modified tests:
 
 ```bash
 # cleanup previous results and logs
@@ -27,10 +27,9 @@ npm run smoke-test
 
 ```
 
-Add/Remove tests in smoke-non-intrusive folder
+Add/Remove tests in recorded-tests folder
 
-Update ./smoke-tests.js to list all tests to be run with 'npm run qc-test'
-Update smoke-tests in packages.json to update the serial list of tests
+Update ./smoke-tests.js to list all tests to be run with 'npm run smoke-test'
 
 
 ## To cleanup/reinstall:
@@ -53,7 +52,7 @@ const dotenv = require('dotenv').config();
 const fs = require('fs');
 var username = process.env.ADMIN_USERNAME;
 var password = process.env.ADMIN_PASSWORD;
-var testname = "02_Chronos_Package_Update";
+var testname = "00_The_HomeDepot_Homepage";
 var now = new Date();
 var month = now.getMonth() + 1;
 var dir = `./test-results/${now.getFullYear()}-${month}-${now.getDate()}/${testname}`;
