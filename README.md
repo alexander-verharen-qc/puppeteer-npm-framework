@@ -60,7 +60,7 @@ Update ./smoke-tests.js to list all tests to be run with 'npm run smoke-test'
 ## To cleanup/reinstall:
 
 ```bash
-npm run clean:complete
+npm run clean:install
 ```
 
 ## Recording and preparing tests using Chrome Recorder
