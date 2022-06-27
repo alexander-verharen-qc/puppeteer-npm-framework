@@ -182,7 +182,7 @@ const start = new Date();
 
     console.log(`\n\n Taking Screenshot of Homepage ' + ${testname}`);
 
-    await page.screenshot({ path: `${dir}/${testname}-homepage-image001.png`, type: 'png' });
+    await page.screenshot({ path: `${dir}/${testname}-homepage-image001.jpg`, type: 'jpeg' });
 
     await browser.close();
 

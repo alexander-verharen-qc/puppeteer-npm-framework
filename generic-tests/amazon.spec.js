@@ -48,7 +48,7 @@ const start = new Date();
    })
 
    console.log(`\n\n Taking Screenshot of Amazon Homepage ' + ${testname}`);
-   await page.screenshot({ path: `${dir}/${testname}-Amazon-homepage-image001.png`, type: 'png' });
+   await page.screenshot({ path: `${dir}/${testname}-Amazon-homepage-image001.jpg`, type: 'jpeg' });
 
  
    test('shows search results after search input', async () => {
@@ -59,7 +59,7 @@ const start = new Date();
      expect(firstProduct).toBeTruthy()
    })
    console.log(`\n\n Taking Screenshot of Search Product Page ' + ${testname}`);
-   await page.screenshot({ path: `${dir}/${testname}-search-product-image001.png`, type: 'png' });
+   await page.screenshot({ path: `${dir}/${testname}-search-product-image001.jpg`, type: 'jpeg' });
 
   
   await browser.close()
