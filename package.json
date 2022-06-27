@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "puppeteer": "^14.4.1"
+  },
+  "name": "puppeteer-tests",
+  "description": "A template to quickly start a node typescript application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./generic-tests/00_The_HomeDepot.js",
+    "smoke-tests": "node ./smoke-tests.js",
+    "clean": "npm-run-all -s clean:archive clean:delete",
+    "clean:archive": "zip -r ./test-results/* `date +%Y-%m-%d`-test-results.zip",
+    "clean:delete": "rm -rf ./*.png && rm -rf ./test-results/* && rm -rf ./*.log",
+    "clean:complete": "npm run clean && rmdir /Q /S node_modules",
+    "clean:install": "npm run clean:complete && npm i && npm install && mkdir test-results"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quotecenter/puppeteer-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quotecenter/puppeteer-tests/issues"
+  },
+  "homepage": "https://github.com/quotecenter/puppeteer-tests#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
